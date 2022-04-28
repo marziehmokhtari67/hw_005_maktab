@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form of registration</title>
+    <style>
+        body {
+            background-image: url(https://www.w3schools.com/css/img_forest.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+
+            overflow-y: scroll;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: medium;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: small;
+            color: white;
+        }
+
+        .box {
+            background-color: rgb(6, 6, 49);
+            opacity: 0.7;
+            margin: 20px 450px;
+            height: 90%;
+
+        }
+
+        form {
+           margin-top: 40px;
+           margin-bottom: 40px;
+           margin-left: 40px;
+           margin-right: 40px;
+            font-size: small;
+            color: white;
+            opacity: 1.0;
+        }
+
+        input {
+            color: black;
+
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>free Code Camp Survey Form</h1>
+    <h2>Thank you for taking the form to help us improve the platform </h2>
+    <div class="box">
+        <form>
+            <lable for="name">Name </lable>
+            <input type="text" id="name" placeholder="Enter your name" name="name" style="width:100%"><br><br>
+            <lable for="email">Email </lable><br>
+            <input type="text" id="email" placeholder="Enter your email" name="email" style="width:100%"><br><br>
+            <!--  -->
+            <lable for="age">Age </lable><br>
+            <input type="number" id="age" placeholder="Age"name="age" style="width:100% "><br><br>
+            <!--  -->
+            <lable for="option">Witch option best describes your current role? </lable><br>
+            <input list="option" placeholder="select an option" style="width:100%" >
+            <datalist id="option">
+                <option value="html">
+                <option value="css">
+                <option value="python">
+                <option value="matlab">
+                <option value="C sharp">
+            </datalist>
+            <!--  -->
+            <p>Would you recommand freeCodeCamp to a friend? </p>
+            <input  type="radio" id="first" value="Definitely" name="recommend" >
+            <label for="first">Definitely </label><br> 
+            <input type="radio" id="second" value="Maybe" name="recommend">
+            <label for="second">Maybe</label> Maybe <br>
+            <input type="radio" id="third" value="Not sure" name="recommend"> 
+            <label for="third">Not sure</label><br>
+            <!--  -->
+            <br>
+            <lable for="favorate">What is your favorate at freeCodeCamp? </lable>
+            <input list="favorate" placeholder="select an option" style="width:100%">
+            <datalist id="favorate">
+                <option value="html">
+                <option value="css">
+                <option value="python">
+                <option value="matlab">
+                <option value="C sharp">
+            </datalist><br><br>
+
+            <!--  -->
+            <label for="improved">What would you like to see improved?</label><br>
+            <input type="checkbox" id="improved" name="front-end project" value="front-end project">front-endproject<br>
+            <input type="checkbox" id="improved" name="front-end project" value="front-end project">front-endproject<br>
+            <input type="checkbox" id="improved" name="Data visualization" value="Data visualization">Data visualization<br>
+            <input type="checkbox" id="improved" name="Data chalanges" value="chalanges">Data chalanges<br>
+            <input type="checkbox" id="improved" name="Open Source Community" value="Open Source Community">Open Source Community<br>
+            <input type="checkbox" id="improved" name="Gitter help rooms" value="Gitter help rooms">Gitter help rooms<br>
+            <input type="checkbox" id="improved" name="videos" value="videos">videos<br>
+            <input type="checkbox" id="improved" name="city meetups" value="city meetups">city meetups<br>
+            <input type="checkbox" id="improved" name="viki" value="viki">viki<br>
+            <input type="checkbox" id="improved" name="Forum" value="Forum">Forum<br>
+            <input type="checkbox" id="improved"  value="Additional cources">Additional courses<br>
+            <!--  -->
+            <br>
+            <lable for="comment"> Any comments or suggestion?</lable>
+            <input type="text" id="comment" placeholder="Enter yuor comment here" style="width:100%; height:40px">
+
+            <br><br>
+            <input type="submit" id="comment" value="submit" style="width:100%; Background-color:rgb(4, 97, 52); color:white">
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
